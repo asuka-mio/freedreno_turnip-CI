@@ -47,11 +47,9 @@ unzip "$ndkver"-linux.zip  &> /dev/null
 
 
 echo "Downloading mesa source (~30 MB) ..." $'\n'
-curl https://github.com/asuka-mio/mesa/archive/refs/heads/main.zip --output mesa-main.zip &> /dev/null
+git clone https://github.com/asuka-mio/mesa
 ###
-echo "Exracting mesa source to a folder ..." $'\n'
-unzip mesa-main.zip &> /dev/null
-cd mesa-main/mesa-main
+cd mesa
 
 # Workaround r26-rc1 is still r26-beta2 directory 
 ndkver="android-ndk-r26-beta2"
