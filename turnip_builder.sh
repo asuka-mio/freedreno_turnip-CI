@@ -51,7 +51,7 @@ curl https://github.com/asuka-mio/mesa/archive/refs/heads/main.zip --output mesa
 ###
 echo "Exracting mesa source to a folder ..." $'\n'
 unzip mesa-main.zip &> /dev/null
-cd mesa-main
+cd mesa-main/mesa-main
 
 # Workaround r26-rc1 is still r26-beta2 directory 
 ndkver="android-ndk-r26-beta2"
